@@ -883,11 +883,11 @@ body {
     padding: 2.5rem;
     box-sizing: border-box;
     box-shadow: -0.1rem 0 0.5rem rgba(0, 0, 0, 0.3);
-    transition: right 0.5s cubic-bezier(1,0,0,1);
+    transition: right 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
 
-.sidebar-display{
+.sidebar-display {
     right: 0;
 }
 
@@ -899,12 +899,12 @@ body {
 }
 
 .sidebar-header h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .sidebar-header i {
     margin-left: auto;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: #1aa1f5;
     cursor: pointer;
 }
@@ -912,7 +912,7 @@ body {
 .sidebar-user {
     display: flex;
     align-items: center;
-    padding-top: 1.5rem;
+    padding-top: 1.4rem;
 }
 
 .sidebar-user-img {
@@ -931,7 +931,7 @@ body {
     margin-left: auto;
     width: 3.5rem;
     height: 3.5rem;
-    font-size: 5rem;
+    font-size: 3rem;
     border: 0.1rem solid #1aa1f5;
     border-radius: 50%;
     display: flex;
@@ -942,7 +942,7 @@ body {
 
 .sidebar-user-info {
     padding: 1.5rem 0;
-    font-size: 1.8rem;   
+    font-size: 1.5rem;
 }
 
 .sidebar-user-info h4 {
@@ -951,7 +951,7 @@ body {
 
 .following {
     display: flex;
-    padding: 1.5rem 0;
+    padding: 1.4rem 0;
 }
 
 .following-paragraph {
@@ -959,7 +959,7 @@ body {
 }
 
 .following-paragraph:first-child {
-    margin-right: 2.5rem;
+    margin-right: 1.6rem;
 }
 
 .following-paragraph span {
@@ -976,12 +976,12 @@ body {
 }
 
 .sidebar-list-1 li {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.6rem;
 }
 
 .sidebar-list-1 a {
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #868383;
 }
 
@@ -991,17 +991,75 @@ body {
 
 .sidebar-list-2 ul {
     list-style: none;
-    padding: 3rem 0;
+    padding: 1.5rem 0;
 }
 
 .sidebar-list-2 li {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.6rem;
 }
 
 .sidebar-list-2 a {
     text-decoration: none;
+    font-size: 1.4rem;
+    color: #868383;
+}
+
+/* dark mode */
+
+.dark-mode {
+    display: flex;
+    align-items: center;
+}
+
+.dark-mode p {
+    margin-right: 8rem;
     font-size: 1.6rem;
     color: #868383;
 }
+
+.toggle {
+    width: 4.5rem;
+    height: 1.5rem;
+    background-color: #777;
+    border-radius: 3rem;
+    box-shadow: inset 0 0.2rem 1rem rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.circle {
+    width: 2rem;
+    height: 2rem;
+    background-color: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+    transition: all 0.1s linear;
+}
+
+.move {
+    left: 2.5rem;
+    background-color: #117abb;
+}
+
+.dark-1 {
+    background-color: #1c2938;
+}
+
+.dark-2 {
+    background-color: #10171e;
+}
+
+.light {
+    color: #fff;
+}
+
+.bordor-color {
+    border-color: #444;
+}
+
+/* end of dark mode  */
 /* end of side bar  */
 /* end of feeds page */
