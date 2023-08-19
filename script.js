@@ -117,6 +117,8 @@ xBtn.addEventListener('click', () => {
 
 const darkElements1 = document.querySelectorAll('.dark-mode-1');
 const darkElements2 = document.querySelectorAll('.dark-mode-2');
+const lightTexts = document.querySelectorAll('.light-text');
+const borders = document.querySelectorAll('.border');
 
 
 toggle.addEventListener('click', () => {
@@ -126,4 +128,9 @@ toggle.addEventListener('click', () => {
 
     Array.from(darkElements2).map(darkElements2 =>
         darkElements2.classList.toggle('dark-2'));
+
+    Array.from(lightTexts).map(lightTexts => 
+        lightTexts.classList.toggle('light'));
+    Array.from(borders).map(borders =>
+        borders.classList.toggle('border-color'));
 });
